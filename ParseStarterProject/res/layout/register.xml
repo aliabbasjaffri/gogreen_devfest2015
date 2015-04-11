@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/registrationSubmitButton">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="120dp"
+        android:textSize="17dp"
+        android:textColor="#50CF59" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CNIC"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="false"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="180dp"
+        android:textSize="17dp"
+        android:textColor="#50CF59" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Emergency"
+        android:id="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/emergencyContactEditText"
+        android:layout_toStartOf="@+id/emergencyContactEditText"
+        android:textSize="17dp"
+        android:textColor="#50CF59" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:hint="Enter full Name"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cnicEditText"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/nameEditText"
+        android:layout_alignStart="@+id/nameEditText"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/emergencyContactEditText"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/cnicEditText"
+        android:layout_alignStart="@+id/cnicEditText"
+        android:layout_alignRight="@+id/cnicEditText"
+        android:layout_alignEnd="@+id/cnicEditText"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Contact"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textSize="17dp"
+        android:textColor="#50CF59" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:id="@+id/registerationSubmitButton"
+        android:textColor="#ffffff"
+        android:background="@drawable/submitbutton_drawable"
+        android:textSize="15dp"
+        android:layout_below="@+id/roleSpinner"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/emailEditText"
+        android:layout_alignEnd="@+id/emailEditText"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/textView11"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:textSize="17dp"
+        android:textColor="#50CF59" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEditText"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignLeft="@+id/emergencyContactEditText"
+        android:layout_alignStart="@+id/emergencyContactEditText"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/emailEditText"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="70dp"
+        android:textSize="17dp"
+        android:textColor="#50CF59"
+        android:layout_toStartOf="@+id/registerationSubmitButton"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roleSpinner"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignLeft="@+id/emailEditText"
+        android:layout_alignStart="@+id/emailEditText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:src="@drawable/top_banner"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Go Green Pakistan!"
+        android:id="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

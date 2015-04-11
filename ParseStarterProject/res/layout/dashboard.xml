@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:id="@+id/buttonDistress"
+        android:background="@drawable/hazardbutton_drawable"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="VIEW ALERTS"
+        android:id="@+id/reportButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_alignRight="@+id/buttonDistress"
+        android:layout_alignEnd="@+id/buttonDistress"
+        android:layout_alignLeft="@+id/buttonDistress"
+        android:layout_alignStart="@+id/buttonDistress"
+        android:background="@color/green"
+        android:clickable="false"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/top_banner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IN CASE OF EMERGENCY"
+        android:id="@+id/textView6"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAP THE BUTTON"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff" />
+
+</RelativeLayout>

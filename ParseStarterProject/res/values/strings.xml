@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="green" >#50CF59</color>
+    <color name="red">#ff0000</color>
+    <color name="black" >#000000</color>
+    <string name="parse_app_id">ZEHv9djqUwtsjJSG9qDqlURP0vVzi4ywOHCes4rE</string>
+    <string name="parse_client_key">eFNBJZzGA8jJne4hwCHsrNsDsp7JD976dPBZITo1</string>
+
+    <string name="hello">Go Green!</string>
+    <string name="app_name">Go Green Pakistan!</string>
+    <string name="title_activity_distress_list">Distress Notifications List</string>
+
+</resources>
